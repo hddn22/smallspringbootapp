@@ -10,5 +10,7 @@ public class UserResponse {
     private String login;
     private String firstName;
     private String middleName;
+    private Integer age;
     private String lastName;
+    private AddressResponse address;
 }

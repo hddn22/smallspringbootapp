@@ -35,9 +35,9 @@ public class User {
     @Column(name = "age")
     private Integer age;
 
-    @OneToOne(fetch = FetchType.LAZY)
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name = "addres_id", foreignKey = @ForeignKey(name = "fk_users_address_id"))
-    private Address adress;
+    private Address address;
 
     @Override
     public boolean equals(Object o) {
