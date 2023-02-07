@@ -3,12 +3,9 @@ package com.example.smallspringbootapp.controller;
 import com.example.smallspringbootapp.model.exceptions.ExceptionResponse;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-@RestController
+@RestControllerAdvice
 public class ExceptionController {
 
     @ResponseStatus(HttpStatus.NOT_FOUND)

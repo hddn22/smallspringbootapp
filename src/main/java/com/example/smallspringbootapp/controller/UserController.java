@@ -23,7 +23,7 @@ public class UserController {
         return userService.findAll();
     }
 
-    @GetMapping(value = "${userId}", produces = APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/{userId}", produces = APPLICATION_JSON_VALUE)
     public UserResponse findById(@PathVariable Long userId) {
         return userService.findById(userId);
     }
